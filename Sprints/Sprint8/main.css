@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.sub-navbar {
+    background-color: #555;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sub-navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sub-navbar a:hover {
+    background-color: #777;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #575757;
+}
+
+.primeirossocorros-tips {
+    margin-top: 20px;
+}
+
+.primeirossocorros-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.primeirossocorros-images {
+    margin-top: 20px;
+}
+
+.primeirossocorros img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    margin-left: 100px;
+}
+
+.primeirossocorros2 img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    margin-left: 800px;
+    margin-top: -900px;
+}
+
+.blog-entry {
+    margin-top: 20px;
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.comments-section {
+    margin-top: 40px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.posted-comments {
+    margin-top: 20px;
+}
+
+.posted-comments p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a Linha do Tempo Interativa */
+.linha-do-tempo {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-event {
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.timeline-event h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.timeline-event p {
+    font-size: 16px;
+    color: #555;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 3px;
+    height: 100%;
+    background-color: #333;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+
+.agendamento-history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.agendamento-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.agendamento-history li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}

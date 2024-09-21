@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Site MSI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#painel-principal" onclick="showContent('painel-principal')">Painel Principal</a>
+        <a href="#quem-somos" onclick="showContent('quem-somos')">Quem Somos</a>
+        <a href="#blog" onclick="showContent('blog')">Blog</a>
+    </div>
+
+    <div id="painel-principal" class="content">
+        <h2>Painel Principal</h2>
+        <div class="sub-navbar">
+            <a href="#monitoramento" onclick="showSubContent('monitoramento')">Monitoramento</a>
+            <a href="#agendamento" onclick="showSubContent('agendamento')">Agendamento de Medicamentos</a>
+            <a href="#primeiros-socorros" onclick="showSubContent('primeiros-socorros')">Primeiros Socorros</a>
+        </div>
+        <div id="monitoramento" class="sub-content">
+            <h3>Monitoramento</h3>
+            <p>Aqui você pode acompanhar suas métricas de saúde, como pressão arterial, batimentos cardíacos e mais.</p>
+            <form id="monitoramento-form">
+                <label for="blood-pressure">Pressão Arterial:</label><br>
+                <input type="text" id="blood-pressure" name="blood-pressure"><br>
+                <label for="heart-rate">Batimentos Cardíacos:</label><br>
+                <input type="text" id="heart-rate" name="heart-rate"><br><br>
+                <input type="submit" value="Salvar">
+            </form>
+            <div id="monitoramento-history" class="monitoramento-history">
+                <!-- Histórico será exibido aqui pelo JavaScript -->
+            </div>
+        </div>
+        <div id="agendamento" class="sub-content hidden">
+            <h3>Agendamento de Medicamentos</h3>
+            <p>Defina horários para tomar seus medicamentos e receba lembretes.</p>
+            <form id="agendamento-form">
+                <label for="medicine-name">Nome do Remédio:</label><br>
+                <input type="text" id="medicine-name" name="medicine-name"><br>
+                <label for="medicine-date">Data:</label><br>
+                <input type="date" id="medicine-date" name="medicine-date"><br><br>
+                <input type="submit" value="Salvar">
+            </form>
+            <div id="agendamento-history" class="agendamento-history">
+                <!-- Histórico será exibido aqui pelo JavaScript -->
+            </div>
+        </div>
+        <div id="primeiros-socorros" class="sub-content hidden">
+            <h3>Primeiros Socorros</h3>
+            <p>Informações e guias sobre como proceder em situações de emergência.</p>
+            <div class="first-aid-tips">
+                <h4>Dicas de Primeiros Socorros:</h4>
+                <ul>
+                    <li>Manter a calma e garantir a segurança do local.</li>
+                    <li>Verificar a respiração e os batimentos cardíacos da vítima.</li>
+                    <li>Chamar os serviços de emergência imediatamente.</li>
+                    <li>Não mover a vítima, a menos que esteja em perigo imediato.</li>
+                    <li>Se a vítima estiver inconsciente e não respirar, iniciar a RCP.</li>
+                    <li>Estancar sangramentos aplicando pressão sobre a ferida.</li>
+                </ul>
+            </div>
+            <div class="primeirossocorros">
+                <img src="primeirosocorros4k.jpg" alt="">
+            </div>
+            <div class="primeirossocorros2">
+                <img src="primeirosocorros4k2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="quem-somos" class="content hidden">
+        <h2>Quem Somos</h2>
+        <p>Bem-vindo ao nosso site de saúde! Somos um grupo de estudantes do 3° Ano Técnico do Colégio Cotemig Floresta, apaixonados por tecnologia e bem-estar. Nosso objetivo é desenvolver uma plataforma inovadora e acessível para ajudar idosos e seus cuidadores a se organizarem melhor nos horários dos medicamentos, além de facilitar o monitoramento contínuo da saúde.
+
+            Acreditamos que, com o avanço da tecnologia, podemos criar soluções práticas e eficazes para melhorar a qualidade de vida das pessoas. Nosso site oferece ferramentas intuitivas e personalizadas para garantir que os cuidados com a saúde sejam realizados de maneira segura e eficiente.
+            
+            Nosso compromisso é fornecer um recurso confiável e de fácil utilização, que se adapte às necessidades dos idosos e de seus cuidadores. Estamos dedicados a promover a saúde e o bem-estar, garantindo que todos tenham acesso às informações e suporte necessários para uma vida mais saudável e organizada.
+            
+            Obrigado por visitar nosso site! Juntos, podemos fazer a diferença na vida de muitos.</p>
+
+       
+        <div class="linha-do-tempo">
+            <h3>Nossa História</h3>
+            <div class="timeline-container">
+                <div class="timeline-event">
+                    <h4>2000</h4>
+                    <p>Fundação da Empresa</p>
+                </div>
+                <div class="timeline-event">
+                    <h4>2005</h4>
+                    <p>Lançamento do Produto X</p>
+                </div>
+                <div class="timeline-event">
+                    <h4>2010</h4>
+                    <p>Parceria com Empresa Y</p>
+                </div>
+                <div class="timeline-event">
+                    <h4>2020</h4>
+                    <p>Expansão Internacional</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Depoimentos de Clientes e Parceiros -->
+        <div class="depoimentos">
+            <h3>O Que Dizem Sobre Nós</h3>
+            <div class="depoimento">
+                <p>"Uma empresa incrível, sempre comprometida com a qualidade!"</p>
+                <cite>- Cliente Satisfeito</cite>
+            </div>
+            <div class="depoimento">
+                <p>"A parceria com esta empresa tem sido essencial para nosso sucesso."</p>
+                <cite>- Parceiro de Negócios</cite>
+            </div>
+            <div class="depoimento">
+                <p>"Um ótimo ambiente de trabalho, com foco no crescimento pessoal e profissional."</p>
+                <cite>- Funcionário</cite>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog" class="content hidden">
+        <h2>Blog</h2>
+        <p>Aqui você encontrará artigos e dicas sobre saúde e bem-estar.</p>
+        <div class="blog-entry">
+            <h3>Título do Artigo</h3>
+            <p>Conteúdo do artigo sobre saúde e bem-estar. Este espaço pode ser utilizado para fornecer informações valiosas e dicas para nossos leitores.</p>
+            <img src="imagem-artigo.jpg" alt="Imagem relacionada ao artigo" class="blog-image">
+        </div>
+        <div class="blog-entry">
+            <h3>Outro Título de Artigo</h3>
+            <p>Outro conteúdo de artigo que pode interessar aos nossos leitores. Informações úteis e dicas práticas são sempre bem-vindas.</p>
+            <img src="outra-imagem-artigo.jpg" alt="Outra imagem relacionada ao artigo" class="blog-image">
+        </div>
+        <div class="comments-section">
+            <h3>Comentários</h3>
+            <form>
+                <label for="comment">Deixe seu comentário:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <div class="posted-comments">
+                <h4>Comentários dos usuários:</h4>
+                <p><strong>Usuário 1:</strong> Adorei o artigo! Muito informativo.</p>
+                <p><strong>Usuário 2:</strong> As dicas são ótimas, vou compartilhar com minha família.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showContent(id) {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.add('hidden');
+            });
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function showSubContent(id) {
+            var subContents = document.querySelectorAll('.sub-content');
+            subContents.forEach(function(subContent) {
+                subContent.classList.add('hidden');
+            });
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        
+        function saveRecord(medicineName, medicineDate) {
+            let records = JSON.parse(localStorage.getItem('agendamentoRecords')) || [];
+            records.push({ 
+                date: new Date().toLocaleString(), 
+                medicineName: medicineName, 
+                medicineDate: medicineDate 
+            });
+            localStorage.setItem('agendamentoRecords', JSON.stringify(records));
+        }
+
+        
+        function displayHistory() {
+            let records = JSON.parse(localStorage.getItem('agendamentoRecords')) || [];
+            let historyDiv = document.getElementById('agendamento-history');
+            historyDiv.innerHTML = '<h4>Histórico de Agendamento:</h4><ul>';
+            records.forEach(record => {
+                historyDiv.innerHTML += `<li>${record.date} - Nome do Remédio: ${record.medicineName}, Data: ${record.medicineDate}</li>`;
+            });
+            historyDiv.innerHTML += '</ul>';
+        }
+
+        document.getElementById('agendamento-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            let medicineName = document.getElementById('medicine-name').value;
+            let medicineDate = document.getElementById('medicine-date').value;
+
+            
+            saveRecord(medicineName, medicineDate);
+
+            
+            displayHistory();
+
+            
+            document.getElementById('medicine-name').value = '';
+            document.getElementById('medicine-date').value = '';
+        });
+
+        
+        window.onload = function() {
+            displayHistory();
+        };
+    </script>
+</body>
+</html>

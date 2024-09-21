@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Site MSI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+ 
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#painel-principal" onclick="showContent('painel-principal')">Painel Principal</a>
+        <a href="#quem-somos" onclick="showContent('quem-somos')">Quem Somos</a>
+        <a href="#blog" onclick="showContent('blog')">Blog</a>
+    </div>
+
+    <div id="painel-principal" class="content">
+        <h2>Painel Principal</h2>
+        <div class="sub-navbar">
+            <a href="#monitoramento" onclick="showSubContent('monitoramento')">Monitoramento</a>
+            <a href="#agendamento" onclick="showSubContent('agendamento')">Agendamento de Medicamentos</a>
+            <a href="#primeiros-socorros" onclick="showSubContent('primeiros-socorros')">Primeiros Socorros</a>
+        </div>
+        <div id="monitoramento" class="sub-content">
+            <h3>Monitoramento</h3>
+            <p>Aqui você pode acompanhar suas métricas de saúde, como pressão arterial, batimentos cardíacos e mais.</p>
+        </div>
+        <div id="agendamento" class="sub-content hidden">
+            <h3>Agendamento de Medicamentos</h3>
+            <p>Defina horários para tomar seus medicamentos e receba lembretes.</p>
+        </div>
+        <div id="primeiros-socorros" class="sub-content hidden">
+            <h3>Primeiros Socorros</h3>
+            <p>Informações e guias sobre como proceder em situações de emergência.</p>
+        </div>
+    </div>
+
+    <div id="quem-somos" class="content hidden">
+        <h2>Quem Somos</h2>
+        <p>Bem-vindo ao nosso site de saúde! Somos uma equipe dedicada a fornecer informações e recursos para ajudá-lo a manter um estilo de vida saudável.</p>
+    </div>
+
+    <div id="blog" class="content hidden">
+        <h2>Blog</h2>
+        <p>Aqui você encontrará artigos e dicas sobre saúde e bem-estar.</p>
+    </div>
+
+    <script>
+        function showContent(id) {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.add('hidden');
+            });
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function showSubContent(id) {
+            var subContents = document.querySelectorAll('.sub-content');
+            subContents.forEach(function(subContent) {
+                subContent.classList.add('hidden');
+            });
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
+
+</body>
